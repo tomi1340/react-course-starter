@@ -6,28 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
     <link rel="stylesheet" href="./style.css" />
+    <!--embed dengan google fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Homemade+Apple&display=swap"
       rel="stylesheet"
     />
-    //embed dengan google fonts
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <!--library-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <!--dom sebagai compailer-->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!--babel supaya dapat di baca di berbagai browser-->
   </head>
   <body>
-    <div class="container">
-      <div class="frame">
-        <section class="header">
-          <button class="header-btn">Add</button>
-          <h1 class="header-title">Todo Lists</h1>
-          <button class="header-btn main-red-color">Clear</button>
-        </section>
+    <!--sebagai tempat untuk react komponen berada-->
+    <div id="root"></div>
 
-        <section class="add">
-          <form class="add-form">
-            <input type="text" class="add-input" />
-            <button class="add-btn">Add</button>
-          </form>
-        </section>
-      </div>
-    </div>
+    <script type="text/babel">
+      class App extends React.Component {
+        render() {
+          return (
+            <div class="container">
+              <div class="frame">
+                <section class="header">
+                  <button class="header-btn main-black-color">Add</button>
+                  <h1 class="header-title">Todo Lists</h1>
+                  <button class="header-btn main-red-color">Clear</button>
+                </section>
+
+                <section class="add">
+                  <form class="add-form">
+                    <input type="text" class="add-input" />
+                    <button class="add-btn main-black-color">Add</button>
+                  </form>
+                </section>
+
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+              </div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
   </body>
 </html>
